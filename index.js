@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`App running at http://localhost:${port}`);
 });
+
+app.get('/new-endpoint', (req, res) => {
+    res.send('This is a new endpoint!');
+});
